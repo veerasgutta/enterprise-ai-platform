@@ -1,0 +1,31 @@
+{
+  "data_intelligence": {
+    "default_refresh_interval": 300,
+    "max_insights_per_source": 50,
+    "confidence_threshold": 0.7,
+    "enable_real_time_analysis": true,
+    "cache_enabled": true,
+    "cache_ttl": 3600
+  },
+  "reporting": {
+    "output_directory": "generated_reports",
+    "default_format": "html",
+    "enable_scheduling": true,
+    "max_reports_per_day": 100,
+    "dashboard_refresh_interval": 30,
+    "email_enabled": false,
+    "webhook_enabled": false
+  },
+  "security": {
+    "require_authentication": false,
+    "api_rate_limit": 1000,
+    "enable_audit_logging": true,
+    "data_encryption": false
+  },
+  "performance": {
+    "max_concurrent_analysis": 5,
+    "analysis_timeout": 300,
+    "memory_limit_mb": 2048,
+    "enable_gpu_acceleration": false
+  }
+}

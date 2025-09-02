@@ -1,0 +1,28 @@
+{
+  "default_sources": [
+    {
+      "id": "app_performance",
+      "name": "Application Performance Metrics",
+      "type": "file",
+      "path": "data/app_performance.csv",
+      "refresh_interval": 300,
+      "enabled": true
+    },
+    {
+      "id": "business_metrics",
+      "name": "Business KPI Metrics",
+      "type": "file",
+      "path": "data/business_metrics.csv",
+      "refresh_interval": 3600,
+      "enabled": true
+    },
+    {
+      "id": "user_analytics",
+      "name": "User Behavior Analytics",
+      "type": "file",
+      "path": "data/user_analytics.csv",
+      "refresh_interval": 1800,
+      "enabled": true
+    }
+  ]
+}
