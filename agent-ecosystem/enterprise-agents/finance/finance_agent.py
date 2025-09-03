@@ -813,6 +813,523 @@ class FinanceAgent:
             "uptime": "100%",
             "last_activity": datetime.now().isoformat()
         }
+    
+    async def analyze_investment_roi(self, investment_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Analyze Return on Investment (ROI) for investment opportunities
+        
+        Args:
+            investment_data: Investment details including cost, revenues, timeline
+            
+        Returns:
+            ROI analysis with metrics, projections, and recommendations
+        """
+        self.logger.info(f"Analyzing ROI for investment: {investment_data.get('name', 'unnamed')}")
+        
+        # Simulate ROI analysis processing
+        await asyncio.sleep(1.5)
+        
+        # Extract investment parameters
+        initial_cost = investment_data.get('initial_cost', 1000000)
+        annual_revenue = investment_data.get('annual_revenue', 300000)
+        annual_costs = investment_data.get('annual_costs', 100000)
+        investment_period = investment_data.get('period_years', 5)
+        discount_rate = investment_data.get('discount_rate', 0.08)
+        
+        # Calculate basic ROI metrics
+        annual_net_cash_flow = annual_revenue - annual_costs
+        total_net_cash_flow = annual_net_cash_flow * investment_period
+        simple_roi = ((total_net_cash_flow - initial_cost) / initial_cost) * 100
+        
+        # Calculate NPV (Net Present Value)
+        npv = -initial_cost
+        for year in range(1, investment_period + 1):
+            npv += annual_net_cash_flow / ((1 + discount_rate) ** year)
+        
+        # Calculate payback period
+        payback_period = initial_cost / annual_net_cash_flow if annual_net_cash_flow > 0 else float('inf')
+        
+        # Risk assessment
+        risk_factors = []
+        risk_score = 0
+        
+        if simple_roi < 10:
+            risk_factors.append("Low ROI may not justify investment")
+            risk_score += 20
+        if payback_period > 3:
+            risk_factors.append("Extended payback period increases risk")
+            risk_score += 15
+        
+        # Generate recommendation
+        if simple_roi > 20 and npv > 0:
+            recommendation = "RECOMMENDED"
+            recommendation_reason = "Strong ROI and positive NPV indicate profitable investment"
+        elif simple_roi > 10 and npv > 0:
+            recommendation = "CONDITIONAL"
+            recommendation_reason = "Moderate returns, consider market conditions"
+        else:
+            recommendation = "NOT RECOMMENDED"
+            recommendation_reason = "Poor financial returns or negative NPV"
+        
+        roi_analysis = {
+            "analysis_id": f"roi_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
+            "investment_name": investment_data.get('name', 'Investment Analysis'),
+            "analysis_date": datetime.now().isoformat(),
+            "financial_metrics": {
+                "initial_cost": initial_cost,
+                "annual_revenue": annual_revenue,
+                "annual_costs": annual_costs,
+                "simple_roi_percent": round(simple_roi, 2),
+                "npv": round(npv, 2),
+                "payback_period_years": round(payback_period, 2) if payback_period != float('inf') else None
+            },
+            "risk_assessment": {
+                "risk_score": risk_score,
+                "risk_level": "LOW" if risk_score < 20 else "MEDIUM" if risk_score < 40 else "HIGH",
+                "risk_factors": risk_factors
+            },
+            "recommendation": {
+                "decision": recommendation,
+                "reason": recommendation_reason,
+                "confidence": "HIGH" if abs(simple_roi - 15) > 10 else "MEDIUM"
+            }
+        }
+        
+        self.logger.info(f"ROI analysis completed: {recommendation} ({simple_roi:.1f}% ROI)")
+        return roi_analysis
+    
+    async def calculate_break_even_analysis(self, business_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Calculate break-even analysis for business operations
+        
+        Args:
+            business_data: Business cost and pricing information
+            
+        Returns:
+            Break-even analysis with units, revenue, and timeline
+        """
+        self.logger.info("Calculating break-even analysis")
+        
+        # Simulate break-even calculation
+        await asyncio.sleep(1)
+        
+        # Extract business parameters
+        fixed_costs = business_data.get('fixed_costs', 500000)
+        variable_cost_per_unit = business_data.get('variable_cost_per_unit', 25)
+        selling_price_per_unit = business_data.get('selling_price_per_unit', 50)
+        
+        # Calculate break-even metrics
+        contribution_margin = selling_price_per_unit - variable_cost_per_unit
+        
+        if contribution_margin <= 0:
+            return {
+                "error": "Invalid pricing - selling price must exceed variable costs",
+                "break_even_units": None,
+                "break_even_revenue": None
+            }
+        
+        break_even_units = fixed_costs / contribution_margin
+        break_even_revenue = break_even_units * selling_price_per_unit
+        contribution_margin_ratio = contribution_margin / selling_price_per_unit
+        
+        # Calculate safety margins
+        current_units = business_data.get('current_units', break_even_units * 1.2)
+        margin_of_safety_units = max(0, current_units - break_even_units)
+        margin_of_safety_percentage = (margin_of_safety_units / current_units * 100) if current_units > 0 else 0
+        
+        break_even_analysis = {
+            "analysis_id": f"breakeven_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
+            "analysis_date": datetime.now().isoformat(),
+            "break_even_metrics": {
+                "break_even_units": round(break_even_units, 0),
+                "break_even_revenue": round(break_even_revenue, 2),
+                "contribution_margin_per_unit": contribution_margin,
+                "contribution_margin_ratio": round(contribution_margin_ratio * 100, 2)
+            },
+            "cost_structure": {
+                "fixed_costs": fixed_costs,
+                "variable_cost_per_unit": variable_cost_per_unit,
+                "selling_price_per_unit": selling_price_per_unit
+            },
+            "safety_analysis": {
+                "current_units": current_units,
+                "margin_of_safety_units": round(margin_of_safety_units, 0),
+                "margin_of_safety_percentage": round(margin_of_safety_percentage, 2)
+            },
+            "recommendations": self._generate_breakeven_recommendations(margin_of_safety_percentage, contribution_margin_ratio)
+        }
+        
+        self.logger.info(f"Break-even analysis: {break_even_units:.0f} units, ${break_even_revenue:,.0f} revenue")
+        return break_even_analysis
+    
+    def _generate_breakeven_recommendations(self, safety_margin: float, contribution_ratio: float) -> List[str]:
+        """Generate recommendations based on break-even analysis"""
+        recommendations = []
+        
+        if safety_margin < 10:
+            recommendations.append("LOW SAFETY MARGIN: Consider cost reduction or price increases")
+            recommendations.append("Focus on increasing sales volume to improve safety buffer")
+        elif safety_margin < 20:
+            recommendations.append("MODERATE SAFETY: Monitor costs and pricing closely")
+        else:
+            recommendations.append("HEALTHY SAFETY MARGIN: Strong position above break-even")
+        
+        if contribution_ratio < 0.3:
+            recommendations.append("LOW CONTRIBUTION MARGIN: Review pricing strategy and cost structure")
+        elif contribution_ratio > 0.6:
+            recommendations.append("STRONG MARGINS: Good pricing power and cost control")
+        
+        return recommendations
+    
+    async def assess_cash_flow_projections(self, cash_flow_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Assess and project cash flow patterns
+        
+        Args:
+            cash_flow_data: Historical and projected cash flow information
+            
+        Returns:
+            Cash flow analysis with projections and recommendations
+        """
+        self.logger.info("Assessing cash flow projections")
+        
+        # Simulate cash flow analysis
+        await asyncio.sleep(1.5)
+        
+        # Extract cash flow components
+        operating_cash_flow = cash_flow_data.get('operating_cash_flow', [])
+        investing_cash_flow = cash_flow_data.get('investing_cash_flow', [])
+        financing_cash_flow = cash_flow_data.get('financing_cash_flow', [])
+        projection_months = cash_flow_data.get('projection_months', 12)
+        
+        # Calculate cash flow metrics
+        if operating_cash_flow:
+            avg_operating_cf = sum(operating_cash_flow) / len(operating_cash_flow)
+            operating_cf_trend = self._calculate_trend(operating_cash_flow)
+        else:
+            avg_operating_cf = 0
+            operating_cf_trend = 0
+        
+        # Project future cash flows
+        future_operating_cf = []
+        current_cf = operating_cash_flow[-1] if operating_cash_flow else 100000
+        
+        for month in range(1, projection_months + 1):
+            # Apply trend and seasonality
+            seasonal_factor = 1 + 0.1 * np.sin(2 * np.pi * month / 12)  # 10% seasonal variation
+            projected_cf = current_cf * (1 + operating_cf_trend) ** month * seasonal_factor
+            future_operating_cf.append(round(projected_cf, 2))
+        
+        # Calculate cumulative cash flow
+        cumulative_cf = [sum(future_operating_cf[:i+1]) for i in range(len(future_operating_cf))]
+        
+        # Identify cash flow risks
+        cash_flow_risks = []
+        if min(future_operating_cf) < 0:
+            cash_flow_risks.append("Negative cash flow periods projected")
+        if operating_cf_trend < -0.05:
+            cash_flow_risks.append("Declining cash flow trend detected")
+        
+        cash_flow_assessment = {
+            "assessment_id": f"cashflow_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
+            "assessment_date": datetime.now().isoformat(),
+            "historical_analysis": {
+                "average_operating_cf": round(avg_operating_cf, 2),
+                "operating_cf_trend": round(operating_cf_trend * 100, 2),
+                "cash_flow_volatility": self._calculate_volatility(operating_cash_flow)
+            },
+            "projections": {
+                "projection_period_months": projection_months,
+                "monthly_operating_cf": future_operating_cf,
+                "cumulative_cf": cumulative_cf,
+                "total_projected_cf": round(sum(future_operating_cf), 2)
+            },
+            "risk_analysis": {
+                "cash_flow_risks": cash_flow_risks,
+                "minimum_projected_cf": min(future_operating_cf),
+                "cash_shortage_months": [i+1 for i, cf in enumerate(future_operating_cf) if cf < 0]
+            },
+            "recommendations": self._generate_cashflow_recommendations(operating_cf_trend, cash_flow_risks)
+        }
+        
+        self.logger.info(f"Cash flow projections: {projection_months} months, trend: {operating_cf_trend*100:.1f}%")
+        return cash_flow_assessment
+    
+    def _calculate_trend(self, data: List[float]) -> float:
+        """Calculate trend using simple linear regression"""
+        if len(data) < 2:
+            return 0
+        
+        n = len(data)
+        x = list(range(n))
+        y = data
+        
+        x_mean = sum(x) / n
+        y_mean = sum(y) / n
+        
+        numerator = sum((x[i] - x_mean) * (y[i] - y_mean) for i in range(n))
+        denominator = sum((x[i] - x_mean) ** 2 for i in range(n))
+        
+        if denominator == 0:
+            return 0
+        
+        slope = numerator / denominator
+        return slope / y_mean if y_mean != 0 else 0  # Convert to percentage
+    
+    def _calculate_volatility(self, data: List[float]) -> float:
+        """Calculate volatility (standard deviation / mean)"""
+        if len(data) < 2:
+            return 0
+        
+        mean = sum(data) / len(data)
+        variance = sum((x - mean) ** 2 for x in data) / (len(data) - 1)
+        std_dev = variance ** 0.5
+        
+        return round(std_dev / mean if mean != 0 else 0, 4)
+    
+    def _generate_cashflow_recommendations(self, trend: float, risks: List[str]) -> List[str]:
+        """Generate cash flow management recommendations"""
+        recommendations = []
+        
+        if trend < -0.05:
+            recommendations.append("DECLINING TREND: Implement immediate cash conservation measures")
+            recommendations.append("Review and optimize payment terms with customers and suppliers")
+        elif trend > 0.05:
+            recommendations.append("POSITIVE TREND: Consider strategic investments or debt reduction")
+        
+        if risks:
+            recommendations.append("CASH FLOW RISKS IDENTIFIED: Establish emergency credit facilities")
+            recommendations.append("Implement daily cash flow monitoring and forecasting")
+        else:
+            recommendations.append("STABLE CASH FLOW: Maintain current operational efficiency")
+        
+        recommendations.extend([
+            "Optimize working capital management",
+            "Consider cash flow diversification strategies",
+            "Maintain adequate cash reserves for operational flexibility"
+        ])
+        
+        return recommendations
+    
+    async def evaluate_capital_structure(self, capital_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Evaluate optimal capital structure and financing mix
+        
+        Args:
+            capital_data: Capital structure and financing information
+            
+        Returns:
+            Capital structure analysis with optimization recommendations
+        """
+        self.logger.info("Evaluating capital structure optimization")
+        
+        # Simulate capital structure analysis
+        await asyncio.sleep(1.5)
+        
+        # Extract capital structure components
+        total_debt = capital_data.get('total_debt', 2000000)
+        total_equity = capital_data.get('total_equity', 3000000)
+        cost_of_debt = capital_data.get('cost_of_debt', 0.06)
+        cost_of_equity = capital_data.get('cost_of_equity', 0.12)
+        tax_rate = capital_data.get('tax_rate', 0.25)
+        ebit = capital_data.get('ebit', 800000)
+        
+        # Calculate current capital structure metrics
+        total_capital = total_debt + total_equity
+        debt_ratio = total_debt / total_capital
+        equity_ratio = total_equity / total_capital
+        
+        # Calculate Weighted Average Cost of Capital (WACC)
+        after_tax_cost_of_debt = cost_of_debt * (1 - tax_rate)
+        current_wacc = (debt_ratio * after_tax_cost_of_debt) + (equity_ratio * cost_of_equity)
+        
+        # Evaluate different capital structures
+        scenarios = []
+        debt_ratios_to_test = [0.2, 0.3, 0.4, 0.5, 0.6]
+        
+        for test_debt_ratio in debt_ratios_to_test:
+            test_equity_ratio = 1 - test_debt_ratio
+            test_wacc = (test_debt_ratio * after_tax_cost_of_debt) + (test_equity_ratio * cost_of_equity)
+            
+            # Calculate financial risk (simplified)
+            financial_risk = self._assess_financial_risk_score(test_debt_ratio, ebit, total_capital * test_debt_ratio * cost_of_debt)
+            
+            scenarios.append({
+                "debt_ratio": test_debt_ratio,
+                "equity_ratio": test_equity_ratio,
+                "wacc": round(test_wacc * 100, 2),
+                "financial_risk": financial_risk
+            })
+        
+        # Find optimal capital structure (minimize WACC while managing risk)
+        optimal_scenario = min(scenarios, key=lambda x: x['wacc'] + x['financial_risk'] * 0.02)
+        
+        capital_evaluation = {
+            "evaluation_id": f"capital_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
+            "evaluation_date": datetime.now().isoformat(),
+            "current_structure": {
+                "total_debt": total_debt,
+                "total_equity": total_equity,
+                "debt_ratio": round(debt_ratio * 100, 2),
+                "equity_ratio": round(equity_ratio * 100, 2),
+                "current_wacc": round(current_wacc * 100, 2)
+            },
+            "optimal_structure": {
+                "recommended_debt_ratio": round(optimal_scenario['debt_ratio'] * 100, 2),
+                "recommended_equity_ratio": round(optimal_scenario['equity_ratio'] * 100, 2),
+                "optimal_wacc": optimal_scenario['wacc'],
+                "wacc_improvement": round((current_wacc - optimal_scenario['wacc']/100) * 100, 2)
+            },
+            "scenario_analysis": scenarios,
+            "financing_recommendations": self._generate_capital_recommendations(
+                debt_ratio, optimal_scenario['debt_ratio'], current_wacc, optimal_scenario['wacc']/100
+            ),
+            "implementation_steps": self._generate_capital_implementation_steps(debt_ratio, optimal_scenario['debt_ratio'])
+        }
+        
+        self.logger.info(f"Capital structure evaluated: Current WACC {current_wacc*100:.1f}%, Optimal {optimal_scenario['wacc']:.1f}%")
+        return capital_evaluation
+    
+    def _assess_financial_risk_score(self, debt_ratio: float, ebit: float, interest_expense: float) -> float:
+        """Assess financial risk score for capital structure"""
+        # Interest coverage ratio
+        interest_coverage = ebit / interest_expense if interest_expense > 0 else 10
+        
+        risk_score = 0
+        
+        # Debt ratio risk
+        if debt_ratio > 0.6:
+            risk_score += 40
+        elif debt_ratio > 0.4:
+            risk_score += 20
+        
+        # Interest coverage risk
+        if interest_coverage < 2:
+            risk_score += 50
+        elif interest_coverage < 4:
+            risk_score += 25
+        
+        return min(risk_score, 100)
+    
+    def _generate_capital_recommendations(self, current_debt_ratio: float, optimal_debt_ratio: float, 
+                                        current_wacc: float, optimal_wacc: float) -> List[str]:
+        """Generate capital structure recommendations"""
+        recommendations = []
+        
+        if optimal_debt_ratio > current_debt_ratio:
+            recommendations.append(f"INCREASE DEBT: Optimal debt ratio {optimal_debt_ratio*100:.0f}% vs current {current_debt_ratio*100:.0f}%")
+            recommendations.append("Consider debt financing for upcoming projects or share buybacks")
+            recommendations.append("Take advantage of tax benefits from debt financing")
+        elif optimal_debt_ratio < current_debt_ratio:
+            recommendations.append(f"REDUCE DEBT: Optimal debt ratio {optimal_debt_ratio*100:.0f}% vs current {current_debt_ratio*100:.0f}%")
+            recommendations.append("Consider debt repayment or equity financing for new projects")
+            recommendations.append("Focus on improving financial flexibility")
+        else:
+            recommendations.append("MAINTAIN CURRENT STRUCTURE: Current capital mix is near optimal")
+        
+        wacc_savings = (current_wacc - optimal_wacc) * 100
+        if wacc_savings > 0.5:
+            recommendations.append(f"SIGNIFICANT SAVINGS: Optimizing structure could reduce WACC by {wacc_savings:.1f}%")
+        
+        return recommendations
+    
+    def _generate_capital_implementation_steps(self, current_debt_ratio: float, optimal_debt_ratio: float) -> List[str]:
+        """Generate implementation steps for capital structure optimization"""
+        steps = []
+        
+        if abs(optimal_debt_ratio - current_debt_ratio) > 0.05:
+            steps.extend([
+                "1. Conduct detailed financial modeling and scenario analysis",
+                "2. Review current debt agreements and covenant requirements",
+                "3. Assess market conditions for debt or equity financing",
+                "4. Develop phased implementation timeline",
+                "5. Obtain board and stakeholder approval for capital structure changes"
+            ])
+            
+            if optimal_debt_ratio > current_debt_ratio:
+                steps.extend([
+                    "6. Explore debt financing options (bank loans, bonds, credit facilities)",
+                    "7. Consider share buyback programs to increase leverage",
+                    "8. Negotiate favorable debt terms and covenants"
+                ])
+            else:
+                steps.extend([
+                    "6. Prioritize debt repayment strategies",
+                    "7. Consider equity financing for growth capital",
+                    "8. Implement gradual debt reduction plan"
+                ])
+        else:
+            steps.append("Current capital structure is near optimal - maintain current approach")
+        
+        return steps
+    
+    async def generate_financial_reports(self, report_type: str, period: str, data_sources: List[str] = None) -> Dict[str, Any]:
+        """
+        Generate comprehensive financial reports for executives and stakeholders
+        
+        Args:
+            report_type: Type of financial report (executive_summary, detailed_analysis, board_report)
+            period: Reporting period (monthly, quarterly, annual)
+            data_sources: Optional list of specific data sources to include
+            
+        Returns:
+            Complete financial report with analysis, insights, and recommendations
+        """
+        self.logger.info(f"Generating {report_type} financial report for {period}")
+        
+        # Simulate comprehensive financial report generation
+        await asyncio.sleep(2)
+        
+        financial_report = {
+            "report_id": f"fin_report_{uuid.uuid4().hex[:8]}",
+            "report_type": report_type,
+            "reporting_period": period,
+            "generation_date": datetime.now().isoformat(),
+            "executive_summary": {
+                "overall_performance": "Strong financial performance with continued growth momentum",
+                "key_highlights": [
+                    "Revenue growth of 12.5% year-over-year",
+                    "Profit margin improvement to 18.2%",
+                    "Operating efficiency gains of 8.5%",
+                    "Maintained strong cash position and liquidity metrics"
+                ],
+                "strategic_priorities": [
+                    "Continue revenue growth through market expansion",
+                    "Optimize operational efficiency and cost management",
+                    "Strengthen financial position and cash generation",
+                    "Invest in strategic initiatives and innovation"
+                ]
+            },
+            "financial_performance": {
+                "revenue_metrics": {
+                    "total_revenue": 25000000,
+                    "revenue_growth": "12.5%",
+                    "revenue_by_segment": {
+                        "enterprise_solutions": 15000000,
+                        "mid_market": 7500000,
+                        "small_business": 2500000
+                    },
+                    "recurring_revenue_percentage": "78%"
+                },
+                "profitability_metrics": {
+                    "gross_profit": 18750000,
+                    "gross_margin": "75.0%",
+                    "operating_profit": 5000000,
+                    "operating_margin": "20.0%",
+                    "net_profit": 3750000,
+                    "net_margin": "15.0%"
+                }
+            },
+            "strategic_recommendations": [
+                "Accelerate revenue growth through market expansion",
+                "Continue operational efficiency initiatives",
+                "Strengthen balance sheet through cash generation",
+                "Invest strategically in technology and market opportunities"
+            ]
+        }
+        
+        self.logger.info(f"Financial report generated: {financial_report['report_id']}")
+        return financial_report
 
 # Example usage and testing
 async def main():
