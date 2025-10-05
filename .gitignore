@@ -88,3 +88,18 @@ node_modules/
 # Temporary files
 *.tmp
 *.temp
+
+# Personal/Sensitive (added during cleanup)
+*.env
+*.env.local
+**/config/environment.json
+**/config/production.json
+**/*secret*
+**/*password*
+**/*key*.json
+.vscode/settings.json
+
+# Local development
+local/
+temp/
+scratch/

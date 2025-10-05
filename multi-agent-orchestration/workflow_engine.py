@@ -1,4 +1,16 @@
 """
+🎓 LEARNING PROJECT - Educational Example
+
+This code is part of a personal learning project exploring enterprise AI patterns.
+Created for educational purposes and portfolio demonstration.
+
+⚠️ NOT PRODUCTION CODE - For learning and demonstration only.
+
+Technologies: Multi-agent systems, AI orchestration, enterprise architecture
+Author: Personal learning project
+License: Educational use only
+"""
+"""
 🔄 Multi-Agent Workflow Engine
 Advanced workflow orchestration for enterprise AI agents
 
