@@ -1,9 +1,0 @@
-{
-  "ENVIRONMENT": "development",
-  "LOG_LEVEL": "INFO",
-  "DATABASE_URL": "sqlite:///data_intelligence.db",
-  "REPORTING_DATABASE_URL": "sqlite:///ai_reporting.db",
-  "REDIS_URL": "redis://localhost:6379/0",
-  "API_PORT": "8000",
-  "DASHBOARD_PORT": "8050"
-}
