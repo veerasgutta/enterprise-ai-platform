@@ -30,7 +30,30 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 ### **🚧 Platform Evolution Status**
 > **Active Development**: This platform is continuously evolving with new AI agents, enhanced capabilities, and advanced features being added regularly. The architecture is designed for extensibility and rapid integration of emerging AI technologies.
 
+---
+
+## 📑 Content Index
+
+### **📝 Articles & Guides**
+
+- **[Edge AI Customer Experience Revolution](./edge-ai-customer-experience-revolution.md)** - Comprehensive guide on autonomous support systems using edge AI architecture, 90-day implementation roadmap, and business case analysis
+- **[Next-Gen AI & Human Collaboration Guide 2025](./NEXT_GEN_AI_HUMAN_COLLABORATION_GUIDE_2025.md)** - Advanced LLMs, multi-agent design patterns, and the evolving human role in AI-powered enterprises
+
+### **📚 Learning Resources**
+
+- **[Learning Notes](./LEARNING_NOTES.md)** - Personal learning journey exploring enterprise AI architectures, multi-agent systems, and modern development practices
+
+### **🏗️ Technical Documentation**
+
+- **[Architecture Documentation](./docs/ARCHITECTURE.md)** - Detailed system architecture and design patterns
+- **[AI Data Intelligence](./ai-data-intelligence/README.md)** - AI analytics and intelligence engine documentation
+- **[AI Native Framework](./ai-native-framework/README.md)** - Advanced AI framework integration details
+- **[Code Examples](./examples/README.md)** - Practical implementation examples and patterns
+
+---
+
 ### **📊 Key AI & Automation Achievements**
+
 - **74+ AI-generated insights** through autonomous multi-agent analysis
 - **Sub-100ms API performance** with intelligent caching and optimization
 - **100% automated reporting** via orchestrated AI agent pipelines
@@ -132,7 +155,7 @@ graph TB
 
 ### **🤖 Unified Enterprise AI Ecosystem**
 
-```
+```text
 🏢 Enterprise-AI-Platform/
 │
 ├── 🤖 agent-ecosystem/                  # Multi-Agent Orchestration Hub  
@@ -245,6 +268,6 @@ This project is open source and available under the [MIT License](LICENSE) for e
 
 **🏠 Personal Learning Project** | **🎓 Educational Purpose** | **💼 Independent Development** | **🔓 Open Source**
 
-*Pioneering Next-Generation Enterprise AI Excellence*
+### Pioneering Next-Generation Enterprise AI Excellence
 
 **© 2025 Enterprise AI Platform. Advanced multi-agent business intelligence and automation solutions.**
