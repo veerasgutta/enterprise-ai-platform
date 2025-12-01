@@ -31,9 +31,9 @@ This paper presents a comprehensive architecture for building autonomous, determ
 - 🔧 **Production Patterns**: Guardrails, scalability, high availability
 
 **Related Articles:**
-- [Next-Gen AI & Human Collaboration Guide 2025](../next-gen-ai-human-collaboration-guide-2025.md)
-- [Edge AI Customer Experience Revolution](../edge-ai-customer-experience-revolution.md)
-- [Enterprise Agent Architecture](./architecture.md)
+- [Next-Gen AI & Human Collaboration Guide 2025](./next-gen-ai-human-collaboration-guide-2025.md)
+- [Edge AI Customer Experience Revolution](./edge-ai-customer-experience-revolution.md)
+- [Enterprise Agent Architecture](./docs/architecture.md)
 
 ---
 
@@ -755,13 +755,13 @@ The ADSH architecture presented here provides a foundation for building such sys
 
 Explore other articles in this research series:
 
-1. **[Next-Gen AI & Human Collaboration Guide 2025](../next-gen-ai-human-collaboration-guide-2025.md)** - Comprehensive guide on LLM evolution, multi-agent patterns, deterministic AI, and human role evolution
+1. **[Next-Gen AI & Human Collaboration Guide 2025](./next-gen-ai-human-collaboration-guide-2025.md)** - Comprehensive guide on LLM evolution, multi-agent patterns, deterministic AI, and human role evolution
 
-2. **[Edge AI Customer Experience Revolution](../edge-ai-customer-experience-revolution.md)** - Edge AI for autonomous support, self-healing systems, and proactive customer experience
+2. **[Edge AI Customer Experience Revolution](./edge-ai-customer-experience-revolution.md)** - Edge AI for autonomous support, self-healing systems, and proactive customer experience
 
-3. **[Enterprise Agent Architecture](./architecture.md)** - Detailed technical architecture for multi-agent systems with code patterns
+3. **[Enterprise Agent Architecture](./docs/architecture.md)** - Detailed technical architecture for multi-agent systems with code patterns
 
-4. **[Learning Notes](../learning-notes.md)** - Personal learnings, framework comparisons, and experiment outcomes
+4. **[Learning Notes](./learning-notes.md)** - Personal learnings, framework comparisons, and experiment outcomes
 
 ---
 

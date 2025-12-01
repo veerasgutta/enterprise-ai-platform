@@ -36,16 +36,17 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 
 ### **📝 Articles & Guides**
 
+- **[Autonomous, Deterministic & Self-Healing Systems Architecture](./autonomous-deterministic-systems-architecture.md)** - ADSH architecture for building autonomous, deterministic, and self-healing enterprise systems with human-in-the-loop approval workflows
 - **[Edge AI Customer Experience Revolution](./edge-ai-customer-experience-revolution.md)** - Comprehensive guide on autonomous support systems using edge AI architecture, 90-day implementation roadmap, and business case analysis
-- **[Next-Gen AI & Human Collaboration Guide 2025](./NEXT_GEN_AI_HUMAN_COLLABORATION_GUIDE_2025.md)** - Advanced LLMs, multi-agent design patterns, and the evolving human role in AI-powered enterprises
+- **[Next-Gen AI & Human Collaboration Guide 2025](./next-gen-ai-human-collaboration-guide-2025.md)** - Advanced LLMs, multi-agent design patterns, and the evolving human role in AI-powered enterprises
 
 ### **📚 Learning Resources**
 
-- **[Learning Notes](./LEARNING_NOTES.md)** - Personal learning journey exploring enterprise AI architectures, multi-agent systems, and modern development practices
+- **[Learning Notes](./learning-notes.md)** - Personal learning journey exploring enterprise AI architectures, multi-agent systems, and modern development practices
 
 ### **🏗️ Technical Documentation**
 
-- **[Architecture Documentation](./docs/ARCHITECTURE.md)** - Detailed system architecture and design patterns
+- **[Architecture Documentation](./docs/architecture.md)** - Detailed system architecture and design patterns
 - **[AI Data Intelligence](./ai-data-intelligence/README.md)** - AI analytics and intelligence engine documentation
 - **[AI Native Framework](./ai-native-framework/README.md)** - Advanced AI framework integration details
 - **[Code Examples](./examples/README.md)** - Practical implementation examples and patterns
