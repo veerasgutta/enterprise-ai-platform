@@ -36,6 +36,7 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 
 ### **📝 Articles & Guides**
 
+- **[Rust + WebAssembly: The AI Performance Revolution](./rust-wasm-ai-performance-revolution.md)** - Why Python isn't enough for production AI, and how Rust + WASM delivers 5-50x performance gains at the edge
 - **[Autonomous, Deterministic & Self-Healing Systems Architecture](./autonomous-deterministic-systems-architecture.md)** - ADSH architecture for building autonomous, deterministic, and self-healing enterprise systems with human-in-the-loop approval workflows
 - **[Edge AI Customer Experience Revolution](./edge-ai-customer-experience-revolution.md)** - Comprehensive guide on autonomous support systems using edge AI architecture, 90-day implementation roadmap, and business case analysis
 - **[Next-Gen AI & Human Collaboration Guide 2025](./next-gen-ai-human-collaboration-guide-2025.md)** - Advanced LLMs, multi-agent design patterns, and the evolving human role in AI-powered enterprises
