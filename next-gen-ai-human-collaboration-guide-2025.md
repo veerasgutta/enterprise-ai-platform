@@ -1459,6 +1459,11 @@ Human: [Iterates further]
 **No Warranties:**
 This content is provided "as-is" for educational purposes. All code examples are illustrative and should be thoroughly tested and adapted before any production use. The author assumes no responsibility for implementations based on this content.
 
+## Related Reading
+
+- **[The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md)** - Reconnecting technological advancement with human wisdom foundations.
+- **[Autonomous Systems Architecture](./autonomous-deterministic-systems-architecture.md)** - Deep dive into building resilient agentic systems.
+
 ---
 
 ## Conclusion

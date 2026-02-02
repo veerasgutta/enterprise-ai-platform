@@ -755,9 +755,11 @@ The ADSH architecture presented here provides a foundation for building such sys
 
 Explore other articles in this research series:
 
-1. **[Next-Gen AI & Human Collaboration Guide 2025](./next-gen-ai-human-collaboration-guide-2025.md)** - Comprehensive guide on LLM evolution, multi-agent patterns, deterministic AI, and human role evolution
+1. **[The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md)** - Exploring the philosophical and ethical foundations of robust AI systems
 
-2. **[Edge AI Customer Experience Revolution](./edge-ai-customer-experience-revolution.md)** - Edge AI for autonomous support, self-healing systems, and proactive customer experience
+2. **[Next-Gen AI & Human Collaboration Guide 2025](./next-gen-ai-human-collaboration-guide-2025.md)** - Comprehensive guide on LLM evolution, multi-agent patterns, deterministic AI, and human role evolution
+
+3. **[Edge AI Customer Experience Revolution](./edge-ai-customer-experience-revolution.md)** - Edge AI for autonomous support, self-healing systems, and proactive customer experience
 
 3. **[Enterprise Agent Architecture](./docs/architecture.md)** - Detailed technical architecture for multi-agent systems with code patterns
 
