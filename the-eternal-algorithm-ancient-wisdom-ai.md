@@ -1,9 +1,12 @@
 # 🏛️ The Eternal Algorithm: Bridging Ancient Wisdom with Cognitive Intelligence
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Veera%20S%20Gutta-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/veerasgutta/)
+
 **Exploring the parallels between human evolution, ancient philosophy, and the future of Ethical AI**
 
+**Published:** February 1, 2026  
 **Author:** Veera S Gutta  
-**Date:** February 1, 2026  
+**Reading Time:** 8 minutes  
 **Status:** Published  
 **LinkedIn:** [linkedin.com/in/veerasgutta](https://www.linkedin.com/in/veerasgutta/)
 
