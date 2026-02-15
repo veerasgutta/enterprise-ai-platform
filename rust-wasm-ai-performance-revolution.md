@@ -209,6 +209,7 @@ Organizations investing in Rust + WASM capabilities today will have a significan
 
 ## Related Articles
 
+- [Digital Colleagues: Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md)
 - [The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md)
 - [Autonomous, Deterministic & Self-Healing Systems Architecture](./autonomous-deterministic-systems-architecture.md)
 - [Edge AI: The Customer Experience Revolution](./edge-ai-customer-experience-revolution.md)

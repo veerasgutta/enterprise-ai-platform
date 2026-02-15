@@ -36,6 +36,7 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 
 ### **📝 Articles & Guides**
 
+- **[Digital Colleagues: Navigating Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md)** - A practical survival guide for working with AI agents — trust calibration, accountability mapping, decision-making frameworks, and the employee's compass for the policy vacuum
 - **[The Great Transformation: Embrace the AI Revolution](./the-great-transformation-ai-revolution.md)** - Why critical thinking, creativity, and ethics will define the winners of the AI revolution — through the lens of history's great transformations
 - **[The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md)** - Bridging ancient philosophy (Stoicism, Indigenous Knowledge) with modern AI safety and ethics
 - **[Swarm Intelligence: The Enterprise AI Revolution](./swarm-intelligence-enterprise-future.md)** - Why collective intelligence from thousands of simple agents outperforms single complex AI systems in enterprise environments

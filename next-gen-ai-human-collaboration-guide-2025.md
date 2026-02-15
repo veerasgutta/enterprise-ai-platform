@@ -1461,6 +1461,7 @@ This content is provided "as-is" for educational purposes. All code examples are
 
 ## Related Reading
 
+- **[Digital Colleagues: Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md)** - A practical survival guide for working with AI agents.
 - **[The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md)** - Reconnecting technological advancement with human wisdom foundations.
 - **[Autonomous Systems Architecture](./autonomous-deterministic-systems-architecture.md)** - Deep dive into building resilient agentic systems.
 

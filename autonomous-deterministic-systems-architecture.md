@@ -31,6 +31,7 @@ This paper presents a comprehensive architecture for building autonomous, determ
 - 🔧 **Production Patterns**: Guardrails, scalability, high availability
 
 **Related Articles:**
+- [Digital Colleagues: Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md)
 - [Next-Gen AI & Human Collaboration Guide 2025](./next-gen-ai-human-collaboration-guide-2025.md)
 - [Edge AI Customer Experience Revolution](./edge-ai-customer-experience-revolution.md)
 - [Enterprise Agent Architecture](./docs/architecture.md)
