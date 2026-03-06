@@ -163,8 +163,9 @@ We are in the adolescent phase. The mistakes we make now will define the mature 
 ---
 
 **Related Articles:**
-- [Digital Colleagues: Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md)
+- [Trust but Verify: GenAI Content Validation & Production Guardrails](./genai-content-validation-production-guardrails.md)
 - [The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md)
+- [Digital Colleagues: Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md)
 - [Swarm Intelligence: The Enterprise Future](./swarm-intelligence-enterprise-future.md)
 - [Rust + WebAssembly: The AI Performance Revolution](./rust-wasm-ai-performance-revolution.md)
 - [Autonomous, Deterministic & Self-Healing Systems](./autonomous-deterministic-systems-architecture.md)
