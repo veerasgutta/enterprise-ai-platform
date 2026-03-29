@@ -1460,6 +1460,7 @@ Human: [Iterates further]
 This content is provided "as-is" for educational purposes. All code examples are illustrative and should be thoroughly tested and adapted before any production use. The author assumes no responsibility for implementations based on this content.
 
 **Related Articles:**
+- [Self-Evolving Intelligence: When Your Platform Learns to Improve Itself](./self-evolving-intelligence-platforms.md)
 - [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md)
 - [Trust but Verify: GenAI Content Validation & Production Guardrails](./genai-content-validation-production-guardrails.md)
 - [The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md)

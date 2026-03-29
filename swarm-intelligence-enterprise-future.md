@@ -31,6 +31,7 @@ This article explores the paradigm shift from single-agent AI architectures to s
 - 📈 **Scalability**: Natural scaling through agent multiplication
 
 **Related Articles:**
+- [Self-Evolving Intelligence: When Your Platform Learns to Improve Itself](./self-evolving-intelligence-platforms.md)
 - [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md)
 - [Trust but Verify: GenAI Content Validation & Production Guardrails](./genai-content-validation-production-guardrails.md)
 - [The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md)

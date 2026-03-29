@@ -36,6 +36,7 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 
 ### **📝 Articles & Guides**
 
+- **[Self-Evolving Intelligence: When Your Platform Learns to Improve Itself](./self-evolving-intelligence-platforms.md)** - Adaptive reasoning, persistent agent memory, self-evolving architectures, dynamic topology, knowledge federation, and the feedback loops that make AI platforms compound their own intelligence
 - **[AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md)** - Trust boundary architecture, verification pipelines, confidence scoring, human-in-the-loop patterns, defending against hallucinations and adversarial attacks, and maintaining customer trust when AI is everywhere
 - **[Trust but Verify: GenAI Content Validation, Guardrails & Production Safety](./genai-content-validation-production-guardrails.md)** - Comprehensive framework for validating GenAI-generated content — multi-layer validation pipelines, production guardrails, security hardening, audit trails, deterministic behavioral validation, and human-in-the-loop oversight
 - **[Digital Colleagues: Navigating Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md)** - A practical survival guide for working with AI agents — trust calibration, accountability mapping, decision-making frameworks, and the employee's compass for the policy vacuum

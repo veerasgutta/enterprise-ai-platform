@@ -864,6 +864,7 @@ Build for it.
 ---
 
 **Related Articles:**
+- [Self-Evolving Intelligence: When Your Platform Learns to Improve Itself](./self-evolving-intelligence-platforms.md)
 - [Trust but Verify: GenAI Content Validation & Production Guardrails](./genai-content-validation-production-guardrails.md)
 - [Digital Colleagues: Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md)
 - [The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md)
