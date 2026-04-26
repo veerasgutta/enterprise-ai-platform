@@ -36,6 +36,7 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 
 ### **📝 Articles & Guides**
 
+- **[Beyond RAG: Why Context-Augmented Generation Is the Next Layer of Enterprise AI](./beyond-rag-context-augmented-generation.md)** - Why RAG alone fails in production, and how a Context Manager that assembles identity, session, knowledge, policy, and temporal signals before generation makes enterprise AI auditable, identity-aware, and reliably multi-tenant
 - **[The Invisible Fortress: Why Every Enterprise Needs an Agentic Operating System](./agentic-os-invisible-fortress-enterprise.md)** - Why agents need isolated, company-scoped runtime environments with capability-based security, internal message buses, gateway firewalls, and federated cross-organization collaboration via A2A protocol
 - **[Forget AI Talking to You. The Real Revolution Is AI Talking to AI.](./forget-ai-talking-to-you-ai-talking-to-ai.md)** - Why AI-to-AI communication — agents discovering, negotiating, and delegating to each other — is the real paradigm shift, not better chatbots
 - **[Self-Evolving Intelligence: When Your Platform Learns to Improve Itself](./self-evolving-intelligence-platforms.md)** - Adaptive reasoning, persistent agent memory, self-evolving architectures, dynamic topology, knowledge federation, and the feedback loops that make AI platforms compound their own intelligence
