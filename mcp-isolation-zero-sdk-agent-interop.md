@@ -324,3 +324,11 @@ The protocols are here. The governance is here. The gateway pattern is here. The
 - **The "lethal trifecta" framing:** Simon Willison, multiple posts (2024–2026)
 - **MCP as USB-C for AI:** Edwards, Ars Technica (April 2025)
 - **Companion articles in this series:** [Beyond RAG (CAG)](./beyond-rag-context-augmented-generation.md) · [AI ↔ AI (A2A)](./forget-ai-talking-to-you-ai-talking-to-ai.md) · [The Invisible Fortress (Agentic OS)](./agentic-os-invisible-fortress-enterprise.md) · [AI Trust Boundaries](./ai-trust-boundaries-protecting-platforms.md) · [GenAI Validation & Guardrails](./genai-content-validation-production-guardrails.md)
+
+---
+
+**Connect with me:** [linkedin.com/in/veerasgutta](https://www.linkedin.com/in/veerasgutta/)
+
+---
+
+*Isolation is not the absence of integration. It is integration done right.*
