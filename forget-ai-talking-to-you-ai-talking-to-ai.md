@@ -173,4 +173,13 @@ And that revolution isn't coming. It's already here. Most of us just haven't not
 
 ---
 
+## 🔗 Related in this series
+
+- [Zero-SDK Interop: How MCP Lets Your Platform Use Other Platforms Without Trusting Them](./mcp-isolation-zero-sdk-agent-interop.md) — the agent↔tools/data layer (MCP) that complements this article's agent↔agent layer (A2A)
+- [The Invisible Fortress: Why Every Enterprise Needs an Agentic Operating System](./agentic-os-invisible-fortress-enterprise.md) — the runtime that hosts the agents A2A connects
+- [Beyond RAG: Why Context-Augmented Generation Is the Next Layer of Enterprise AI](./beyond-rag-context-augmented-generation.md) — the context layer feeding each agent in the network
+- [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md) — the trust calculus required when agents talk to other organizations' agents
+
+---
+
 *The most powerful AI isn't the smartest one in the room. It's the most connected.*

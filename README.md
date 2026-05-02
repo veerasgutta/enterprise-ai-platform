@@ -36,6 +36,7 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 
 ### **📝 Articles & Guides**
 
+- **[Zero-SDK Interop: How MCP Lets Your Platform Use Other Platforms Without Trusting Them](./mcp-isolation-zero-sdk-agent-interop.md)** - Why the SDK era is ending, the gateway+registry pattern that emerged from the AAIF MCP Dev Summit 2026, using Pydantic-style schemas as a security boundary on inbound A2A/MCP traffic, minimum-viable Agent Cards, and egress hygiene that lets you consume any platform's capabilities without revealing your own
 - **[Beyond RAG: Why Context-Augmented Generation Is the Next Layer of Enterprise AI](./beyond-rag-context-augmented-generation.md)** - Why RAG alone fails in production, and how a Context Manager that assembles identity, session, knowledge, policy, and temporal signals before generation makes enterprise AI auditable, identity-aware, and reliably multi-tenant
 - **[The Invisible Fortress: Why Every Enterprise Needs an Agentic Operating System](./agentic-os-invisible-fortress-enterprise.md)** - Why agents need isolated, company-scoped runtime environments with capability-based security, internal message buses, gateway firewalls, and federated cross-organization collaboration via A2A protocol
 - **[Forget AI Talking to You. The Real Revolution Is AI Talking to AI.](./forget-ai-talking-to-you-ai-talking-to-ai.md)** - Why AI-to-AI communication — agents discovering, negotiating, and delegating to each other — is the real paradigm shift, not better chatbots

@@ -333,4 +333,13 @@ The question isn't whether your agents need an operating system. It's whether yo
 
 ---
 
+## 🔗 Related in this series
+
+- [Zero-SDK Interop: How MCP Lets Your Platform Use Other Platforms Without Trusting Them](./mcp-isolation-zero-sdk-agent-interop.md) — the gateway+registry pattern that turns the fortress's outer wall into a working control plane
+- [Forget AI Talking to You. The Real Revolution Is AI Talking to AI.](./forget-ai-talking-to-you-ai-talking-to-ai.md) — the A2A protocol that federates fortresses across organizational boundaries
+- [Beyond RAG: Why Context-Augmented Generation Is the Next Layer of Enterprise AI](./beyond-rag-context-augmented-generation.md) — the context layer running inside the fortress
+- [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md) — the verification model that guards every gateway crossing
+
+---
+
 *The next great platform moat isn't the smartest agent. It's the most secure, most connected, most governed agent network. Build the fortress first. Then let your agents do their work.*
