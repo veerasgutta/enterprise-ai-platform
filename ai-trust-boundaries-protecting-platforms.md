@@ -886,6 +886,7 @@ Build for it.
 
 ## 🔗 Related in this series
 
+- [Eval-Driven Development: Why Your AI Pipeline Needs a Judge Before a Deployer](./eval-driven-development-ai-pipeline-judges.md) — trust requires evidence; EDD produces that evidence continuously through automated eval gates
 - [Zero-SDK Interop: How MCP Lets Your Platform Use Other Platforms Without Trusting Them](./mcp-isolation-zero-sdk-agent-interop.md) — where trust boundaries become concrete protocol boundaries (MCP gateway, Pydantic schemas, minimum-viable Agent Cards)
 - [Trust but Verify: GenAI Content Validation, Guardrails & Production Safety](./genai-content-validation-production-guardrails.md) — the validation pipeline that enforces these trust boundaries on generated content
 - [The Invisible Fortress: Why Every Enterprise Needs an Agentic Operating System](./agentic-os-invisible-fortress-enterprise.md) — the runtime isolation that gives trust boundaries something to enforce

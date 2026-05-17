@@ -292,6 +292,7 @@ Context is the architecture. Generation is just the last step.
 
 ## 🔗 Related in this series
 
+- [Eval-Driven Development: Why Your AI Pipeline Needs a Judge Before a Deployer](./eval-driven-development-ai-pipeline-judges.md) — context quality determines output quality; EDD provides the automated gates that verify both
 - [Zero-SDK Interop: How MCP Lets Your Platform Use Other Platforms Without Trusting Them](./mcp-isolation-zero-sdk-agent-interop.md) — the agent↔tools layer (MCP) that pairs with this article's context↔agent layer
 - [Forget AI Talking to You. The Real Revolution Is AI Talking to AI.](./forget-ai-talking-to-you-ai-talking-to-ai.md) — the agent↔agent layer (A2A)
 - [The Invisible Fortress: Why Every Enterprise Needs an Agentic Operating System](./agentic-os-invisible-fortress-enterprise.md) — the runtime layer where context, tools, and peers all converge

@@ -331,6 +331,7 @@ The organizations that start building these capabilities now won't just have bet
 - [Autonomous, Deterministic & Self-Healing Systems](./autonomous-deterministic-systems-architecture.md)
 - [Edge AI Customer Experience Revolution](./edge-ai-customer-experience-revolution.md)
 - [Next-Gen AI & Human Collaboration Guide](./next-gen-ai-human-collaboration-guide-2025.md)
+- [Eval-Driven Development: Why Your AI Pipeline Needs a Judge Before a Deployer](./eval-driven-development-ai-pipeline-judges.md)
 
 ---
 

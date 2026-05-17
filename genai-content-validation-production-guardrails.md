@@ -834,6 +834,7 @@ The field is evolving rapidly. Key trends to watch:
 
 ## 🔗 Related in this series
 
+- [Eval-Driven Development: Why Your AI Pipeline Needs a Judge Before a Deployer](./eval-driven-development-ai-pipeline-judges.md) — guardrails are one gate in a multi-gate eval pipeline; this article shows the full architecture
 - [Zero-SDK Interop: How MCP Lets Your Platform Use Other Platforms Without Trusting Them](./mcp-isolation-zero-sdk-agent-interop.md) — schema validation as a security primitive at the MCP/A2A boundary, not just an output filter
 - [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md) — the trust model that this validation pipeline enforces
 - [The Invisible Fortress: Why Every Enterprise Needs an Agentic Operating System](./agentic-os-invisible-fortress-enterprise.md) — the runtime where validation policies live and run
