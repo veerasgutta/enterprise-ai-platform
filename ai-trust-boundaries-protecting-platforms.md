@@ -886,6 +886,7 @@ Build for it.
 
 ## 🔗 Related in this series
 
+- [Agent Identity: OAuth Was Built for Humans — What Works for Machines?](./agent-identity-oauth-built-for-humans.md) — how capability tokens, delegation chains, and trust scores give agents identity without OAuth's consent model
 - [Eval-Driven Development: Why Your AI Pipeline Needs a Judge Before a Deployer](./eval-driven-development-ai-pipeline-judges.md) — trust requires evidence; EDD produces that evidence continuously through automated eval gates
 - [Zero-SDK Interop: How MCP Lets Your Platform Use Other Platforms Without Trusting Them](./mcp-isolation-zero-sdk-agent-interop.md) — where trust boundaries become concrete protocol boundaries (MCP gateway, Pydantic schemas, minimum-viable Agent Cards)
 - [Trust but Verify: GenAI Content Validation, Guardrails & Production Safety](./genai-content-validation-production-guardrails.md) — the validation pipeline that enforces these trust boundaries on generated content

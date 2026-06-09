@@ -323,7 +323,7 @@ The protocols are here. The governance is here. The gateway pattern is here. The
 - **Tool poisoning attacks:** [InvariantLabs — MCP Security Notification](https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks)
 - **The "lethal trifecta" framing:** Simon Willison, multiple posts (2024–2026)
 - **MCP as USB-C for AI:** Edwards, Ars Technica (April 2025)
-- **Companion articles in this series:** [Beyond RAG (CAG)](./beyond-rag-context-augmented-generation.md) · [AI ↔ AI (A2A)](./forget-ai-talking-to-you-ai-talking-to-ai.md) · [The Invisible Fortress (Agentic OS)](./agentic-os-invisible-fortress-enterprise.md) · [AI Trust Boundaries](./ai-trust-boundaries-protecting-platforms.md) · [GenAI Validation & Guardrails](./genai-content-validation-production-guardrails.md)
+- **Companion articles in this series:** [Agent Identity (OAuth for Machines)](./agent-identity-oauth-built-for-humans.md) · [Beyond RAG (CAG)](./beyond-rag-context-augmented-generation.md) · [AI ↔ AI (A2A)](./forget-ai-talking-to-you-ai-talking-to-ai.md) · [The Invisible Fortress (Agentic OS)](./agentic-os-invisible-fortress-enterprise.md) · [AI Trust Boundaries](./ai-trust-boundaries-protecting-platforms.md) · [GenAI Validation & Guardrails](./genai-content-validation-production-guardrails.md)
 
 ---
 
