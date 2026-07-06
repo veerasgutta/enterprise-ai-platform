@@ -275,6 +275,7 @@ If you're selecting models based on benchmark scores alone — SWE-bench, GAIA, 
 
 ## 🔗 Related in this series
 
+- [The Agent That Remembers: Why Persistent Memory Is the Next Trust Boundary](./agent-memory-persistent-state-trust-boundary.md) — why point-in-time evals can't govern agents with continuous state, and what replaces them
 - [Beyond RAG: Context-Augmented Generation](./beyond-rag-context-augmented-generation.md) — context quality determines eval quality; CAG provides the signals EDD evaluates
 - [Trust but Verify: GenAI Content Validation & Production Guardrails](./genai-content-validation-production-guardrails.md) — guardrails are one component of the deterministic eval gate
 - [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md) — trust requires evidence; EDD produces that evidence continuously
