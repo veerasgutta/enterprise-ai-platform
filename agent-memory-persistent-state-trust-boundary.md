@@ -266,6 +266,7 @@ The stateless era gave us a free pass on this problem. That pass just expired.
 12. *HarnessAudit: Trajectory-Level Safety Auditing for Agent Harnesses.* arXiv:2605.14271 (May 2026)
 
 **Related articles in this series:**
+- [Power You Can't Withdraw Isn't Authority](./reversibility-undo-problem-agent-autonomy.md) — the action boundary that follows this one: reversibility as the real ceiling on autonomy
 - [Agent Identity: OAuth Was Built for Humans — What Works for Machines?](./agent-identity-oauth-built-for-humans.md)
 - [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md)
 - [Digital Colleagues: Navigating Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md)

@@ -526,6 +526,7 @@ None of these require adopting Sanskrit terminology. None require believing in V
 - [CycloneDX AI BOM](https://cyclonedx.org/) — the emerging standard for AI provenance (paramparā in modern dress)
 
 **Related articles in this series:**
+- [Power You Can't Withdraw Isn't Authority](./reversibility-undo-problem-agent-autonomy.md) — the withdrawal principle (saṃhāra) applied on its own as a modern autonomy constraint
 - [The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md) — Stoicism, Indigenous knowledge, and the Socratic method applied to AI
 - [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md) — Trust architecture and verification pipelines
 - [The Invisible Fortress: Why Every Enterprise Needs an Agentic Operating System](./agentic-os-invisible-fortress-enterprise.md) — Agent isolation and capability-based security
