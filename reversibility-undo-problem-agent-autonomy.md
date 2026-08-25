@@ -194,6 +194,7 @@ Only one of those questions gets harder as agents get more capable. And it's not
 
 ## 🔗 Related in this series
 
+- [Getting In Is the Easy Part](./agent-exit-problem-long-running-agents.md) — the same principle inside a single long run: the undo *after* an action here, the exit *during* a run there
 - [The Agent That Remembers](./agent-memory-persistent-state-trust-boundary.md) — the *state* boundary; this article covers the *action* boundary that follows it
 - [Digital Colleagues: Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md) — who answers for the action that couldn't be withdrawn
 - [The Dharma Machine](./the-dharma-machine-ancient-indian-wisdom-governing-ai.md) — the withdrawal principle in its original form, inside a fuller governance stack

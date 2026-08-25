@@ -267,6 +267,8 @@ The stateless era gave us a free pass on this problem. That pass just expired.
 
 **Related articles in this series:**
 - [Power You Can't Withdraw Isn't Authority](./reversibility-undo-problem-agent-autonomy.md) — the action boundary that follows this one: reversibility as the real ceiling on autonomy
+- [Getting In Is the Easy Part](./agent-exit-problem-long-running-agents.md) — why suspending a long run has to capture what the agent learned, not just where it stopped
+- [Prove It Without Keeping It](./prove-it-without-keeping-it-zero-retention-audit.md) — the memory that has to be auditable is also the memory you may not be permitted to keep
 - [Agent Identity: OAuth Was Built for Humans — What Works for Machines?](./agent-identity-oauth-built-for-humans.md)
 - [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md)
 - [Digital Colleagues: Navigating Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md)
