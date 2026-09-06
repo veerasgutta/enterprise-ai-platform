@@ -227,6 +227,7 @@ Only one of them gets harder as agents run longer. And it is not the first one.
 
 - [Power You Can't Withdraw Isn't Authority](./reversibility-undo-problem-agent-autonomy.md) — the undo *after* an action; this article covers the exit *during* a run
 - [Prove It Without Keeping It](./prove-it-without-keeping-it-zero-retention-audit.md) — unwinding a stranded run is much harder when you are not permitted to keep the record of what it did
+- [Capability Is Becoming a Privilege](./capability-is-becoming-a-privilege-earned-agent-access.md) — how long an agent may run unattended should itself be earned, not configured
 - [The Agent That Remembers](./agent-memory-persistent-state-trust-boundary.md) — why a suspended run has to capture what the agent learned, not just where it stopped
 - [Autonomous, Deterministic & Self-Healing Systems](./autonomous-deterministic-systems-architecture.md) — the recovery patterns this argument depends on
 - [Digital Colleagues: Accountability, Ownership & Judgment](./digital-colleagues-accountability-ownership-judgment.md) — who owns the cleanup when a run strands

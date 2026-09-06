@@ -538,6 +538,7 @@ On a Tuesday.
 
 ## 🔗 Related in this series
 
+- [Capability Is Becoming a Privilege](./capability-is-becoming-a-privilege-earned-agent-access.md) — identity establishes *who* the agent is; the next question is what that identity has earned the right to do without a human watching
 - [The Agent That Remembers: Why Persistent Memory Is the Next Trust Boundary](./agent-memory-persistent-state-trust-boundary.md) — identity attests the container, but memory is the contents; why credentials alone can't authenticate a stateful agent
 - [Zero-SDK Interop: How MCP Lets Your Platform Use Other Platforms Without Trusting Them](./mcp-isolation-zero-sdk-agent-interop.md) — the protocol-level isolation pattern that makes cross-platform agent identity viable
 - [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md) — trust architecture and verification pipelines that underpin agent trust scores
