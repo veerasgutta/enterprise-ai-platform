@@ -275,6 +275,7 @@ If you're selecting models based on benchmark scores alone — SWE-bench, GAIA, 
 
 ## 🔗 Related in this series
 
+- [The Agent That Marked Its Own Homework](./agent-marked-its-own-homework-separation-of-duties.md) — this article argues you need a judge; that one asks who the judge works for, and why a safety finding must never be averaged into a composite score
 - [Prove It Without Keeping It](./prove-it-without-keeping-it-zero-retention-audit.md) — why the verdict has to be computed while the evidence still exists, because under zero retention you don't get a second chance to judge it
 - [The Agent That Remembers: Why Persistent Memory Is the Next Trust Boundary](./agent-memory-persistent-state-trust-boundary.md) — why point-in-time evals can't govern agents with continuous state, and what replaces them
 - [Beyond RAG: Context-Augmented Generation](./beyond-rag-context-augmented-generation.md) — context quality determines eval quality; CAG provides the signals EDD evaluates

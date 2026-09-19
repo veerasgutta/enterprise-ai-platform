@@ -208,6 +208,7 @@ That was always the better design. We're only building it now because someone fi
 
 ## 🔗 Related in this series
 
+- [The Agent That Marked Its Own Homework](./agent-marked-its-own-homework-separation-of-duties.md) — an attestation is only as good as its author; separation of duties is what makes one worth keeping
 - [Eval-Driven Development](./eval-driven-development-ai-pipeline-judges.md) — where the verdicts come from; this article is about why they have to be computed before the evidence expires
 - [The Agent That Remembers](./agent-memory-persistent-state-trust-boundary.md) — the memory that must be auditable is also the memory you may not be allowed to keep
 - [Getting In Is the Easy Part](./agent-exit-problem-long-running-agents.md) — a run you cannot reconstruct is much harder to unwind, which makes registering the undo up front matter more, not less

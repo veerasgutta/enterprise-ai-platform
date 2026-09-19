@@ -181,6 +181,7 @@ We assume capability is something you build or buy. Increasingly it is something
 
 ## 🔗 Related in this series
 
+- [The Agent That Marked Its Own Homework](./agent-marked-its-own-homework-separation-of-duties.md) — this article covers what earns authority; that one covers who is allowed to certify that it was earned
 - [Agent Identity: OAuth Was Built for Humans](./agent-identity-oauth-built-for-humans.md) — identity says *who* the agent is; this article is about what that identity has earned the right to do
 - [Power You Can't Withdraw Isn't Authority](./reversibility-undo-problem-agent-autonomy.md) — the ceiling on autonomy set by reversibility; earned trust is the ceiling set by history, and the lower one applies
 - [Eval-Driven Development](./eval-driven-development-ai-pipeline-judges.md) — where the record comes from; a licence is only as good as the tests behind it
