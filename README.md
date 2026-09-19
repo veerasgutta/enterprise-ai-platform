@@ -36,7 +36,7 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 
 ### **📝 Articles & Guides**
 
-- **[The Agent That Marked Its Own Homework](./agent-marked-its-own-homework-separation-of-duties.md)** - Separation of duties never made it into agent architecture — the five ways the doer, the approver and the verifier collapse into the same party, why a flag is not a person, why absence is not a pass, why safety findings must never be averaged, and what it means that the frontier labs just spent a month hiring outside graders
+- **[The Agent That Marked Its Own Homework](./agent-marked-its-own-homework-separation-of-duties.md)** - The agent says "done." The customer asks why they can no longer log in. A simple cancellation story shows why successful tool calls are not proof of the right outcome, and how independent checks make useful autonomy possible.
 
 - **[Capability Is Becoming a Privilege](./capability-is-becoming-a-privilege-earned-agent-access.md)** - Frontier labs now gate their most powerful capabilities by who has been vetted, not who pays — why the same shift is coming to your agents, what a graduated driving licence already knows about earned permission, why trust must fall faster than it rises, why the worst signal should set the level, and how to make the gate legible instead of political
 - **[Prove It Without Keeping It](./prove-it-without-keeping-it-zero-retention-audit.md)** - Enterprise buyers now demand full agent auditability and zero data retention in the same meeting — why "auditable" and "retained" were never the same property, what survives deletion (commitments, chains, attestations), and why an audit that requires handing over your data creates a second breach surface
