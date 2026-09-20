@@ -19,9 +19,11 @@ Imagine a support request like this:
 
 The agent reads the message, calls the cancellation tool and sends a polite confirmation. The ticket closes. The dashboard records another successful resolution.
 
-But the agent chose **cancel immediately** instead of **cancel at renewal**. The customer has lost access they already paid for.
+But the agent chose **cancel immediately** instead of **cancel at renewal**. The customer lost access they had already paid for.
 
 No service crashed. No tool returned an error. The cancellation worked exactly as instructed.
+
+The deeper failure is not that the action happened. It is that the system treated a completed tool call as proof of the right customer outcome. A self-reported success can still be wrong when reality changes underneath it.
 
 **The system measured whether the action ran. The customer cared whether it was right.**
 
@@ -37,7 +39,7 @@ Everything matches. It marks the task complete.
 
 The detail it missed the first time, "I still need access until then," is missing from the review too. The original misunderstanding has become the explanation for why the work was correct.
 
-That is what it means for an agent to mark its own homework. Not simply making a mistake, but controlling the evidence used to judge that mistake.
+That is what it means for an agent to mark its own homework. Not just making a mistake, but controlling the evidence used to judge it.
 
 Adding a reviewer agent does not automatically solve it. If the reviewer receives only that summary, it may agree for exactly the same reason.
 
@@ -57,15 +59,17 @@ For this routine request, no person needs to approve every click. Software can e
 
 The important boundary is not how many agents or people appear in the diagram. It is whether the doer can change the rules, invent an approval, or decide for itself what counts as success.
 
-This is a familiar idea from payments and code review: the person doing the work should not be its only source of permission and assurance. AI makes that distinction more important, not less.
+This is a familiar design rule from payments and code review: the person doing the work should not be its only source of permission and assurance. AI makes that distinction more important, not less.
+
+**A system is only as trustworthy as the evidence it cannot control.**
 
 ## Give the Reviewer Something to Disagree With
 
 A reviewer needs the original request, the applicable rules and the actual outcome. Not just a polished account of what the first agent says it did.
 
-It also needs the authority to stop completion when the evidence does not agree. An objection that is logged and ignored is not an effective control.
+It also needs the authority to stop completion when the evidence does not agree. A logged objection that is ignored is not a control. It is theatre.
 
-In its [March 2026 work on long-running agents](https://www.anthropic.com/engineering/harness-design-long-running-apps), Anthropic describes separating the agent doing the work from the agent evaluating it. The evaluator still needed calibration: a second model could be too generous about the first model's work.
+Recent work on long-running agent systems describes the same pattern: separate the agent doing the work from the agent evaluating it. The evaluator still needs calibration, because a second model can be biased in the wrong direction—especially when it is judging its own execution path instead of the actual customer outcome.
 
 ## The Question the Dice Could Not Answer
 
@@ -79,11 +83,11 @@ Draupadi refuses to accept that the announced result settles the matter. Her [qu
 
 She is challenging the authority behind the action, not merely the outcome of a throw.
 
-The court is full of elders, advisers and relatives. Some do object. Others hesitate or defend the result. The objections do not prevent the mistreatment that follows. This is not a story in which nobody noticed a problem. It is a story in which noticing and questioning were not enough to make the protection work.
+The court is full of elders, advisers and relatives. Some do object. Others hesitate or defend the result. The problem is not the dice; it is the authority behind the move.
 
-The episode carries moral questions far beyond software. But one lesson applies directly: **a recorded outcome is not proof of a legitimate decision.**
+Draupadi's question cuts to the heart of it: **if the player had already lost the right to act, what authority did he still have to decide the next move?** That is the governance question for AI systems too.
 
-For an agent workflow, that means checking whether permission still covers the exact action, whether the evidence comes from somewhere other than the interested party, and whether a valid objection can pause execution or force review.
+The lesson is simple: **a recorded outcome is not proof of a legitimate decision.** In an agent workflow, the real question is not whether the action was logged. It is whether the actor still had authority, whether the evidence is independent, and whether a valid objection could stop execution.
 
 Our support agent was permitted to stop the next renewal. That did not authorize removing today's access. A reviewer that only confirms "subscription cancelled" accepts the result without checking the boundary that mattered.
 
@@ -121,7 +125,9 @@ Remove the agent's final "completed successfully" message from the record.
 
 **Could you still prove that the right thing happened?**
 
-If the answer depends on what the agent said about its own work, that is the next check to build.
+If the answer depends on what the agent said about its own work, that is the next control to build.
+
+The future of agentic systems will not be decided by how often they act. It will be decided by whether the system can prove those actions were valid.
 
 *Give agents room to act. Give the system a way to prove them wrong.*
 
