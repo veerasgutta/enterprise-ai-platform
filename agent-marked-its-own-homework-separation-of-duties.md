@@ -146,6 +146,7 @@ The future of agentic systems will not be decided by how often they act. It will
 
 ## 🔗 Related in this series
 
+- [The Rules You Can't Relax](./gated-autonomy-rules-you-cant-relax.md): why prompts are advice and constitutions are constraints; composition by most-restrictive-wins.
 - [Eval-Driven Development](./eval-driven-development-ai-pipeline-judges.md): how to evaluate an agent's work; this article asks what makes the check independent.
 - [Capability Is Becoming a Privilege](./capability-is-becoming-a-privilege-earned-agent-access.md): what earns authority, and who can verify that it was earned.
 - [Prove It Without Keeping It](./prove-it-without-keeping-it-zero-retention-audit.md): preserving evidence while limiting retained content.

@@ -36,6 +36,8 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 
 ### **📝 Articles & Guides**
 
+- **[The Rules You Can't Relax](./gated-autonomy-rules-you-cant-relax.md)** - Why prompt-based guardrails fail when users plead emergencies, what building codes know about tenant interior decoration, the ancient Vedic jurisprudence of commands versus advice, and why gated autonomy requires one-way composition: most-restrictive-wins.
+
 - **[The Agent That Marked Its Own Homework](./agent-marked-its-own-homework-separation-of-duties.md)** - The agent says "done." The customer asks why they can no longer log in. A simple cancellation story shows why successful tool calls are not proof of the right outcome, and how independent checks make useful autonomy possible.
 
 - **[Capability Is Becoming a Privilege](./capability-is-becoming-a-privilege-earned-agent-access.md)** - Frontier labs now gate their most powerful capabilities by who has been vetted, not who pays — why the same shift is coming to your agents, what a graduated driving licence already knows about earned permission, why trust must fall faster than it rises, why the worst signal should set the level, and how to make the gate legible instead of political

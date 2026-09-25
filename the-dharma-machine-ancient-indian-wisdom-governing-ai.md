@@ -44,6 +44,7 @@ This article maps seven ancient Indian frameworks to seven concrete problems in 
 - ❓ **Yakṣa-praśna** is proof-of-comprehension — the gate that asks "do you understand what you're about to do?" before granting permission
 
 **Related Articles:**
+- [The Rules You Can't Relax: Gated Autonomy & Hierarchical Guardrails](./gated-autonomy-rules-you-cant-relax.md)
 - [The Eternal Algorithm: Ancient Wisdom & AI](./the-eternal-algorithm-ancient-wisdom-ai.md)
 - [The Invisible Fortress: Why Every Enterprise Needs an Agentic Operating System](./agentic-os-invisible-fortress-enterprise.md)
 - [AI Trust Boundaries: Protecting Platforms in the Age of Agentic AI](./ai-trust-boundaries-protecting-platforms.md)
