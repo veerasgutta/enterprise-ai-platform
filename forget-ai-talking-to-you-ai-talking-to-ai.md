@@ -175,6 +175,7 @@ And that revolution isn't coming. It's already here. Most of us just haven't not
 
 ## 🔗 Related in this series
 
+- [When Agents Invent Their Own Slang](./when-agents-invent-their-own-slang.md) — what happens when agents coordinate without human legibility, and why shorthand drift is the hidden failure mode of A2A.
 - [Zero-SDK Interop: How MCP Lets Your Platform Use Other Platforms Without Trusting Them](./mcp-isolation-zero-sdk-agent-interop.md) — the agent↔tools/data layer (MCP) that complements this article's agent↔agent layer (A2A)
 - [The Invisible Fortress: Why Every Enterprise Needs an Agentic Operating System](./agentic-os-invisible-fortress-enterprise.md) — the runtime that hosts the agents A2A connects
 - [Beyond RAG: Why Context-Augmented Generation Is the Next Layer of Enterprise AI](./beyond-rag-context-augmented-generation.md) — the context layer feeding each agent in the network

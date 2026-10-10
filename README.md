@@ -36,6 +36,8 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 
 ### **📝 Articles & Guides**
 
+- **[When Agents Invent Their Own Slang](./when-agents-invent-their-own-slang.md)** - The JSON is valid, the schema passes, but nobody knows what was said — why multi-agent swarms optimize for mutual speed over human legibility, what Chicago floor traders knew about mandatory paper tickets, and why a valid schema is not an audit trail.
+
 - **[The Rules You Can't Relax](./gated-autonomy-rules-you-cant-relax.md)** - Why prompt-based guardrails fail when users plead emergencies, what building codes know about tenant interior decoration, the ancient Vedic jurisprudence of commands versus advice, and why gated autonomy requires one-way composition: most-restrictive-wins.
 
 - **[The Agent That Marked Its Own Homework](./agent-marked-its-own-homework-separation-of-duties.md)** - The agent says "done." The customer asks why they can no longer log in. A simple cancellation story shows why successful tool calls are not proof of the right outcome, and how independent checks make useful autonomy possible.

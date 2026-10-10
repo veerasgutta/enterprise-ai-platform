@@ -139,6 +139,7 @@ When you give agents flat prompts, you are asking them to brake by debating with
 
 ## 🔗 Related in this series
 
+- [When Agents Invent Their Own Slang](./when-agents-invent-their-own-slang.md) — why multi-agent swarms compress mutual communication into private shorthand, and why schemas don't guarantee auditable meaning.
 - [The Agent That Marked Its Own Homework](./agent-marked-its-own-homework-separation-of-duties.md) — why the agent doing the work cannot be the party certifying that the work was safe.
 - [Capability Is Becoming a Privilege](./capability-is-becoming-a-privilege-earned-agent-access.md) — what earns authority in the first place, and why conduct sets the floor.
 - [Power You Can't Withdraw Isn't Authority](./reversibility-undo-problem-agent-autonomy.md) — why reversibility is the ultimate physical boundary on any autonomous action.
