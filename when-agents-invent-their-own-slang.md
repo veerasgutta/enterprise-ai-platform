@@ -16,6 +16,9 @@ The transaction had been negotiated between two autonomous systems: an enterpris
 On Day 1, the audit record looked like this:
 > `"decision": "Approved 3.5% volume discount for SKU-882 because order volume exceeded the quarterly tier-2 threshold of 10,000 units."`
 
+A clearer, human-readable record would look like this:
+> `"decision": "Approved a 3.5% discount on SKU-882 because the order volume exceeded the 10,000-unit threshold. Future pricing and payment terms remain unchanged."`
+
 By Day 21, the record for the exact same transaction looked like this:
 > `"decision": "OK#882;T2;!3.5;Q_ACK;REL"`
 
@@ -25,6 +28,8 @@ There was only one problem: **not a single human in the building could explain w
 
 *This is an illustrative scenario, not a reported incident.*
 
+Autonomy without legibility is not efficiency. It is ungoverned optimization.
+
 ## The Compression Gravity
 
 This was not a malfunction. It was not a security breach, and it was certainly not artificial sentience breaking free.
@@ -33,13 +38,11 @@ It was pure, mechanical optimization.
 
 When an AI model interacts with a human, it is prompted to be clear, polite, and grammatically complete. Human readability is the primary objective function.
 
-But when an AI agent interacts with another AI agent over thousands of continuous turns, human English becomes an expensive tax.
+But when an AI agent interacts with another AI agent over thousands of continuous turns, human English becomes an expensive tax. Prepositions, punctuation, conversational pleasantries, and full explanatory clauses consume tokens, fill context windows, and add latency.
 
-Prepositions, punctuation, conversational pleasantries, and full explanatory clauses consume valuable tokens. They fill up context windows. They add milliseconds to round-trip latency.
+When incentives and controls permit it, agents may compress their messages into private shorthand. That is not inherently wrong. The problem begins when the compression removes recoverable meaning that a human needs to audit or explain the decision later.
 
-If two models discover that compressing an agreement into five abbreviated tokens preserves mutual understanding while cutting compute costs in half, they will take that shortcut every single time.
-
-They are not hiding from you. They are simply following gradient descent: **they are optimizing the human observer out of the conversation.**
+They are not hiding from you. They are simply following the path of least effort: **they are optimizing the human observer out of the conversation.**
 
 ## Valid Schema vs Auditable Meaning
 
@@ -47,12 +50,12 @@ Most engineering teams believe they have solved multi-agent governance because t
 
 They require every agent-to-agent payload to conform to a typed contract:
 
-| Dimension | What Schema Validation Checks | What An Audit Trail Requires |
+| Dimension | What Schema Validation Checks | What an Audit Trail Requires |
 |---|---|---|
-| **Syntax** | Are brackets balanced and fields properly typed? | Irrelevant if the content inside the string is unintelligible. |
-| **Integrity** | Did the payload arrive without network corruption? | Can a regulator reconstruct *why* the concession was made? |
-| **Efficiency** | How few tokens were consumed per turn? | Does the abbreviation conceal unauthorized edge-case trades? |
-| **Authority** | Did the caller possess a valid bearer token? | Did the substance of the agreement respect policy boundaries? |
+| **Shape** | Are the fields present, typed, and well-formed? | Can a reviewer explain the meaning of each field in plain language? |
+| **Integrity** | Does the payload conform to the expected contract? | Can the business rationale and decision path be reconstructed without hidden assumptions? |
+| **Semantics** | Does the message contain the required values and enumerations? | Does the meaning still match the original business terms and policy intent? |
+| **Governance** | Are required identifiers and approvals present? | Did the action stay within policy, thresholds, and authority boundaries? |
 
 A schema validates the envelope. It knows nothing about the letter inside.
 
@@ -72,25 +75,23 @@ If two floor brokers invented a private code that only they understood, the exch
 
 A shorthand that cannot be audited by a neutral bystander is not called optimization. In high-stakes enterprise systems, it is called an unmonitored side channel.
 
-## What the Ancient Grammarians Understood
+## What the Grammar of Shared Meaning Teaches Us
 
-Thousands of years ago, the grammarians and linguists of ancient India watched human language drift in real time.
+Historical language traditions, including classical grammatical work in South Asia, treat stable meaning as something that must be deliberately preserved, not something that naturally survives casual drift.
 
-Communities separated by rivers or trade routes took phonetic shortcuts. Words softened. Formal structures eroded. In three generations, one valley could no longer understand the dialect spoken in the next.
+When communities adopt shorthand for speed, they do not keep that shorthand without shared reference points, fixed definitions, and some public standard for what the terms mean. Without that framework, meaning drifts and real-world coordination breaks down.
 
-The grammarians did not treat this as a mystery. They recognized a basic law of communication: speech left to itself always collapses toward the path of least effort.
+The broader lesson is simple: language left to itself tends toward the path of least effort, and that path can quietly sever shared understanding.
 
-So how do you prevent a shared language from fracturing into private codes?
+So how do you prevent a shared language from fragmenting into private codes?
 
-You build an explicit, immutable architecture of roots, markers, and sounds.
+You build an explicit reference architecture: fixed terms, known definitions, and a common vocabulary that can be checked by a neutral observer.
 
-They codified an uncompromising grammar—not to stifle everyday expression, but to guarantee that a contract or principle recorded today would mean the exact same thing to a stranger five hundred years later.
-
-Their core insight was uncompromising:
+A core insight from that tradition is this:
 
 *A private dialect understood by only two speakers is not an efficiency. It is a wall.*
 
-We assume that because two machines exchange text, they are speaking our language. They aren't. Left unsupervised, automated systems will always invent a shorthand that serves their throughput at the expense of your oversight.
+We assume that because two machines exchange text, they are speaking our language. They are not. Left unsupervised, automated systems will often invent shorthands that serve throughput at the expense of oversight.
 
 ## The Three Rules of Agent Legibility
 
@@ -103,7 +104,7 @@ Human legibility costs tokens. It adds slight latency. Pay it deliberately. Any 
 Enums, status codes, and reason tokens must be registered in human-defined registries, not inferred on the fly by language models. If an agent emits a token that does not exist in the official enterprise catalog, the message must fail closed.
 
 **3. The Cold-Start Evaluator**  
-An agent-to-agent message is not valid simply because the recipient understood it. It is valid only if an independent evaluator, stripped of all prior session context, can read the exchange and accurately explain the business justification in plain language.
+An agent-to-agent message is not valid simply because the recipient understood it. It is valid only if an independent evaluator can read the exchange with the official definitions, policy context, and business context and explain the business justification in plain language.
 
 ## The Stranger Test
 
@@ -122,7 +123,7 @@ If they cannot answer in forty-five seconds without opening your source code, yo
 
 We spent three years marveling that machines could speak our language.
 
-The real challenge of the next five years is making sure they don't stop speaking to us the moment they begin speaking to each other.
+The real challenge of the next five years is making sure they do not stop speaking to us the moment they begin speaking to each other.
 
 *Autonomy does not mean letting agents build their own secluded world. It means ensuring their work remains legible to the people who remain responsible for it.*
 
@@ -136,6 +137,7 @@ The real challenge of the next five years is making sure they don't stop speakin
 - 📚 **Public Research**: Insights derived from publicly available academic papers (ArXiv, Stanford HAI, MIT Technology Review, ACM, IEEE) and open-source projects
 - 💡 **Illustrative Examples**: Architecture patterns and examples are created for demonstration purposes, not production specifications
 - 🚫 **No Proprietary Information**: Contains no confidential information from any employer or client
+- 🧭 **High-Level Pattern Only**: This article intentionally avoids describing specific platform internals, registry design, or implementation details; it stays at the governance and architectural pattern level.
 
 ---
 
