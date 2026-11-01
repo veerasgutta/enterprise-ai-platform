@@ -36,6 +36,8 @@ This repository contains a comprehensive enterprise AI platform demonstrating ad
 
 ### **📝 Articles & Guides**
 
+- **[When Agents Form a Loop](./when-agents-form-a-loop.md)** - Shipping cannot book a carrier until Compliance approves the address; Compliance cannot approve the address until Shipping confirms a carrier. A simple cross-border delivery story shows how two sensible rules trap multi-agent workflows in an endless circle—and the four plain controls that break it.
+
 - **[When Agents Invent Their Own Slang](./when-agents-invent-their-own-slang.md)** - The JSON is valid, the schema passes, but nobody knows what was said — why multi-agent swarms optimize for mutual speed over human legibility, what Chicago floor traders knew about mandatory paper tickets, and why a valid schema is not an audit trail.
 
 - **[The Rules You Can't Relax](./gated-autonomy-rules-you-cant-relax.md)** - Why prompt-based guardrails fail when users plead emergencies, what building codes know about tenant interior decoration, the ancient Vedic jurisprudence of commands versus advice, and why gated autonomy requires one-way composition: most-restrictive-wins.

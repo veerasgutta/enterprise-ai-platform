@@ -143,6 +143,7 @@ The real challenge of the next five years is making sure they do not stop speaki
 
 ## 🔗 Related in this series
 
+- [When Agents Form a Loop](./when-agents-form-a-loop.md) — what happens when two sensible agent rules point at each other, and how to break delegation circles before they drain your budget.
 - [The Rules You Can't Relax](./gated-autonomy-rules-you-cant-relax.md) — why prompt-based guardrails fail when users plead emergencies, and why autonomy needs hierarchical composition.
 - [The Agent That Marked Its Own Homework](./agent-marked-its-own-homework-separation-of-duties.md) — why the agent doing the work cannot be the party certifying that the work was safe.
 - [Forget AI Talking to You. The Real Revolution Is AI Talking to AI.](./forget-ai-talking-to-you-ai-talking-to-ai.md) — why machine-to-machine coordination is the real shift, and where the boundaries must be drawn.
